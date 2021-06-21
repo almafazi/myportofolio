@@ -27,7 +27,7 @@ export const MenuIcon = styled.button<MenuIconProps>`
   background-color: transparent;
   justify-self: flex-end;
   margin-right: 24px;
-  margin-top: 6px;
+  margin-top: 5px;
 
   &::before {
     content: '';

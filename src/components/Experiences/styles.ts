@@ -46,7 +46,7 @@ export const ChipsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 12px;
+  gap: 0;
   margin: 8px 0px;
 `;
 
@@ -62,6 +62,8 @@ export const Chip = styled.div<ChipProps>`
   text-transform: uppercase;
   padding: 2px 12px;
   border-radius: 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
 
   @media (min-width: ${({ theme }: ChipProps) => theme.breakpoints.sm}) {
     padding: 2px 18px;
