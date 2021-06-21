@@ -1,0 +1,21 @@
+{
+  "name": "Felipe da Silva Vieira - Portfolio",
+  "short_name": "Felipe Vieira - Web Site",
+  "icons": [
+    {
+      "src": "/img/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#1D2228",
+  "description": "Portfolio/Web Site descrevendo sobre mim, projetos, trabalhos",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#1D2228"
+}
