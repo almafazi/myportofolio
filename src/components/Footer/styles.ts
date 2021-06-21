@@ -14,7 +14,7 @@ export const FooterContainer = styled.section`
 
 export const FooterTitle = styled.h2<FooterTitleProps>`
   font-weight: 600;
-  width: 60%;
+  width: 80%;
   font-size: ${({ theme }: FooterTitleProps) => theme.fontSizes.large};
   color: ${({ theme }: FooterTitleProps) => theme.colors.white};
   text-align: center;

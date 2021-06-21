@@ -46,7 +46,7 @@ export const ChipsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   margin: 8px 0px;
 `;
 
