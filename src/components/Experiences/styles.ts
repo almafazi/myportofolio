@@ -74,7 +74,7 @@ export const Chip = styled.div<ChipProps>`
 
 export const ExperienceItem = styled.div<ExperiencesItemProps>`
   margin: 16px 0px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
