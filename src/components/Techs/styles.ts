@@ -16,7 +16,7 @@ export const LanguagesContainer = styled.section`
 export const CardsContainer = styled.section`
   width: 100%;
   display: grid;
-  /* grid-template-columns: 16px 1fr 16px; */
+  grid-template-columns: 10px 1fr 10px;
   cursor: pointer;
 
   &::before {
