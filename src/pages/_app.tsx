@@ -14,6 +14,7 @@ function App({ Component, pageProps }: AppProps) {
         <title>Almafazi - Software Developer</title>
         <link rel='shortcut icon' href='/img/icon-512.png' />
         <link rel='apple-touch-icon' href='/img/icon-512.png' />
+        <meta name="google-site-verification" content="cl19Qdrzb0C6jKScUy2EzK3dTZzoARcCmfnq13PbXVc"/>
         <link rel='manifest' href='/manifest.json' />
         <link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800&display=swap' rel='stylesheet' />
         <meta
