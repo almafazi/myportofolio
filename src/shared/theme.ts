@@ -40,6 +40,7 @@ export const theme: Theme = {
     small: '1rem',
     default: '1.5rem',
     large: '2rem',
+    semiExtraLarge: '2.5rem',
     extraLarge: '3rem',
   },
 } as const;

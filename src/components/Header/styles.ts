@@ -63,7 +63,7 @@ export const HeroTextContainer = styled.div<HeroTextContainerProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 
   @media (min-width: ${({ theme }: HeroTextContainerProps) => theme.breakpoints.sm}) {
@@ -84,7 +84,7 @@ export const HeroText = styled.h1<HeroTextProps>`
   color: ${({ theme }: HeroTextProps) => theme.colors.white};
 
   @media (max-width: ${({ theme }: HeroDrawProps) => theme.breakpoints.xs}) {
-    display: none;
+    font-size: ${({ theme }: HeroTextProps) => theme.fontSizes.semiExtraLarge};
   }
 `;
 

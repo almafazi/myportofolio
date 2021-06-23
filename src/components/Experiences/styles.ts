@@ -7,6 +7,9 @@ type ExperienceJobTitleProps = WithTheme;
 type ExperienceDescriptionProps = WithTheme;
 type ChipProps = WithTheme;
 type ExperiencesItemProps = WithTheme;
+interface ButtonLinkProps extends WithTheme {
+  dark: boolean;
+}
 
 export const ExperiencesContainer = styled.section`
   width: 100%;
@@ -83,5 +86,43 @@ export const ExperienceItem = styled.div<ExperiencesItemProps>`
 
   @media (min-width: ${({ theme }: ExperiencesItemProps) => theme.breakpoints.lg}) {
     width: 60%;
+  }
+`;
+
+export const ButtonLink = styled.a<ButtonLinkProps>`
+  cursor: pointer;
+  display: ${({ dark }: ButtonLinkProps) => (dark ? 'none' : 'flex')};
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 3;
+  grid-row: 3;
+  height: 40px;
+  background-color: ${({ dark, theme }: ButtonLinkProps) => (dark ? theme.colors.primary.main : theme.colors.secondary.main)};
+  font-weight: 600;
+  color: ${({ theme }: ButtonLinkProps) => theme.colors.white};
+  font-size: ${({ theme }: ButtonLinkProps) => theme.fontSizes.default};
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  justify-self: center;
+  align-self: center;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: background-color 500ms;
+
+  &:hover {
+    background-color: ${({ dark, theme }: ButtonLinkProps) => (dark ? theme.colors.primary.dark : theme.colors.secondary.dark)};
+  }
+
+  @media (min-width: ${({ theme }: ButtonLinkProps) => theme.breakpoints.md}) {
+    animation: unset;
+    font-size: ${({ theme }: ButtonLinkProps) => theme.fontSizes.small};
+    display: flex;
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  @media (max-width: ${({ theme }: ButtonLinkProps) => theme.breakpoints.xs}) {
+    justify-self: flex-start;
   }
 `;

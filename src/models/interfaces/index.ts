@@ -19,6 +19,7 @@ interface FontSizes {
   default: string;
   large: string;
   extraLarge: string;
+  semiExtraLarge: string;
 }
 
 export interface Colors {

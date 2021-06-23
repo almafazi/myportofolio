@@ -167,4 +167,8 @@ export const ButtonLink = styled.a<ButtonLinkProps>`
     grid-column: unset;
     grid-row: unset;
   }
+
+  @media (max-width: ${({ theme }: ButtonLinkProps) => theme.breakpoints.xs}) {
+    justify-self: flex-start;
+  }
 `;
