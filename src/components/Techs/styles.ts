@@ -52,3 +52,13 @@ export const LanguageIcon = styled.img`
   right: 8px;
   bottom: 8px;
 `;
+
+export const SwipeNote = styled.span`
+  display: none;
+  @media (max-width: ${({ theme }: HorizontalScrollContainerProps) => theme.breakpoints.xs}) {
+    display: block;
+    color: #ececec;
+    font-style: italic;
+    margin-top: 12px;
+  }
+`;

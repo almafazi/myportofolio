@@ -11,7 +11,7 @@ export const Footer = () => {
       <S.SocialMediaContainer>
         {socialMedias.map(item => (
           <a key={item.url} href={item.url} rel='noopener'>
-            <img src={item.icon} alt='Social media icon' />
+            <img src={item.icon} width="45" alt='Social media icon' />
           </a>
         ))}
       </S.SocialMediaContainer>

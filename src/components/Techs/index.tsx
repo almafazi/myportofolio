@@ -25,6 +25,7 @@ export const Techs = () => {
           ))}
         </S.HorizontalScrollContainer>
       </S.CardsContainer>
+      <S.SwipeNote>&lt; swipe &gt;</S.SwipeNote>
     </S.LanguagesContainer>
   );
 };

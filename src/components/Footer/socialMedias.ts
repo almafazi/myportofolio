@@ -13,4 +13,8 @@ export const socialMedias: SocialMediaItem[] = [
     icon: 'img/instagram.svg',
     url: 'https://instagram.com/almafazi/',
   },
+  {
+    icon: 'img/web.png',
+    url: 'https://m.dragonrest.net',
+  },
 ];
