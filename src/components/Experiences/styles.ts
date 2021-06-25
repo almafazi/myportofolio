@@ -126,3 +126,8 @@ export const ButtonLink = styled.a<ButtonLinkProps>`
     justify-self: flex-start;
   }
 `;
+
+export const ExperienceMoreText = styled.span`
+  margin-right: 8px;
+  font-size: 15px;
+`;

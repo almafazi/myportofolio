@@ -49,7 +49,7 @@ interface ColorShade {
 
 export interface Technologies {
   title: string;
-  years?: number;
+  years?: string;
   months?: number;
   iconUrl: string;
 }

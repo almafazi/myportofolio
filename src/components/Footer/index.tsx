@@ -15,6 +15,11 @@ export const Footer = () => {
           </a>
         ))}
       </S.SocialMediaContainer>
+      <S.PoweredBy>
+        Powered by. <a href="https://nextjs.org/" target="_blank">
+            <img src="img/nextJS.png" width="48" alt='Next JS' />
+          </a>
+      </S.PoweredBy>
     </S.FooterContainer>
   );
 };

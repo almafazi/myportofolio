@@ -12,6 +12,11 @@ export const FooterContainer = styled.section`
   align-items: center;
 `;
 
+export const PoweredBy = styled.span`
+  color: white;
+  margin: 30px 0;
+`;
+
 export const FooterTitle = styled.h2<FooterTitleProps>`
   font-weight: 600;
   width: 80%;
@@ -25,7 +30,6 @@ export const SocialMediaContainer = styled.div<SocialMediaContainerProps>`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 16px 8px;
-  margin-bottom: 32px;
   column-gap: 32px;
   row-gap: 16px;
 

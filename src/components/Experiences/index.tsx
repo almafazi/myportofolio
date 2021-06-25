@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { experiences } from './experiences';
 import { SectionTitle } from 'components/SectionTitle';
 
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
 import * as S from './styles';
 
 export const Experiences = () => {
@@ -33,9 +37,16 @@ export const Experiences = () => {
         </S.ExperienceItem>
       ))}
       <S.ButtonLink onClick={() => {
-        setSlice(slice + 3)
+        (slice >= experiences.length) ?
+          setSlice(3) : setSlice(slice + 3)
       }} dark={false}>
-        More Experiences
+      {(slice >= experiences.length) ?
+       <S.ExperienceMoreText>Fewer Experiences</S.ExperienceMoreText> : <S.ExperienceMoreText>More Experiences</S.ExperienceMoreText>
+      }
+      {(slice >= experiences.length) ?
+        <FontAwesomeIcon size='sm' icon={faChevronUp} /> :
+        <FontAwesomeIcon size='sm' icon={faChevronDown} />
+      }
       </S.ButtonLink>
     </S.ExperiencesContainer>
   );

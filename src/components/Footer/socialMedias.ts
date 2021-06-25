@@ -7,7 +7,7 @@ export const socialMedias: SocialMediaItem[] = [
   },
   {
     icon: 'img/linkedin.svg',
-    url: '#',
+    url: 'https://www.linkedin.com/in/padang-istighfar-almafazi-6a760b115/',
   },
   {
     icon: 'img/instagram.svg',
